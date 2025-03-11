@@ -1,9 +1,12 @@
 // import { useEffect, useState } from "react";
+// import { useEffect } from "react";
 import "./App.css";
 // import Intro from "./components/Intro";
 // import Avatar from "./components/Avatar";
 // import Skills from "./components/Skills";
 // import Counter from "./components/Counter";
+import Button from "./components/Button";
+// import { useState } from "react";
 
 // import Message from './Message'
 // const skillsArr = [
@@ -18,6 +21,8 @@ import "./App.css";
 //   { name: "react", level: "advanced", bgc: "magenta" },
 //   { name: "svelte", level: "beginner", bgc: "cyan" },
 // ];
+
+// eslint-disable-next-line react-hooks/rules-of-hooks
 
 function App() {
   // const [advice, setAdvice] = useState("")
@@ -34,6 +39,18 @@ function App() {
   //   getAdvice()
   // },[])
 
+  // const [data, setData] = useState([]);
+  // useEffect(() => {
+  //   fetch("https://northwind.vercel.app/api/categories")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setData(data);
+  //       console.log(data);
+  //     });
+  // }, []);
+
+  // console.log(data);
+
   return (
     <>
       {/* <div className="card">
@@ -47,11 +64,12 @@ function App() {
   <p>You have read <strong> <Message count={count}/></strong> advices</p>
      */}
       {/* <Counter /> */}
-      {Array.from({ length: 10 }, (_, i) => (
+      {/* {Array.from({ length: 10 }, (_, i) => (
         <>
           <h1>A{i}</h1>
         </>
-      ))}
+      ))} */}
+      <Button />
     </>
   );
 }

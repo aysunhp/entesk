@@ -5,12 +5,17 @@ const TextExpander = ({
   className = "",
   expanded = false,
   collapsedNumWords = 10,
-  buttonColor,
+  buttonColor = "blue",
   expandButtonText = "Show more",
   collapseButtonText = "Show less",
 }) => {
   const buttonStyles = {
     color: buttonColor,
+    background: "none",
+    border: "none",
+    font: "inherit",
+    cursor: "pointer",
+    marginLeft: "4px",
   };
 
   const [isExpanded, setIsExpanded] = useState(expanded);

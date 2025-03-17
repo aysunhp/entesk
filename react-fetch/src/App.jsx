@@ -4,6 +4,7 @@ import "./App.css";
 import Loader from "./components/Loader";
 import Error from "./components/Error";
 import Detail from "./components/Detail";
+import FetchComponent from "./components/FetchComponent";
 
 function App() {
   const [data, setData] = useState([]);
@@ -102,6 +103,7 @@ function App() {
         </section>
       )}
     </div>
+    // <FetchComponent />
   );
 }
 export default App;
